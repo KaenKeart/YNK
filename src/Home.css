@@ -1,0 +1,86 @@
+  /* Set background color and text color */
+  body {
+    background-color: #c1cfe1; /* ใส่สีฟ้าพาสเทลอ่อน ๆ */
+    color: #333;
+  }
+
+
+  /* Center content */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+
+
+  /* Style the header */
+  .header {
+    font-size: 50px;
+    color: #007bff;
+    text-align: center;
+  }
+
+  /* Style the paragraph */
+  .paragraph {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* Style for the segment containing images and names */
+  /* Style for the segment containing images and names */
+  .segmentHome {
+    display: flex;
+    justify-content: space-around; /* จัดตำแหน่งตามขอบเขตของ segment */
+    margin-top: 60px; /* ระยะห่างด้านบนของ segment */
+    width: 100%;
+    min-height: 60vh; /* 100vh คือ 100% ของความสูงของ viewport */
+    background-color: #f2f2f2; /* สีพื้นหลัง */
+    border-radius: 10px; /* ขอบมนเหลือง */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เงาขอบ */
+  
+    /* เพิ่มการเปลี่ยนสีเมื่อ hover */
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  /* Style for each person's container */
+  .personContainer {
+    display: flex;
+    flex-direction: column; /* เปลี่ยนเป็นแนวตั้ง */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    position: relative; /* เพิ่มบรรทัดนี้ */
+    width: 100%; /* ทำให้ container ทุกรูปเต็มกว้าง */
+    box-sizing: border-box; /* ป้องกันการเพิ่มขนาดจาก padding */
+  }
+
+  .personImage {
+    width: 300px; /* ให้ความกว้างของรูปเต็มตามขนาดของพื้นที่ที่กำหนดไว้ */
+    height: 80%; /* ให้ความสูงของรูปเต็มตามขนาดของพื้นที่ */
+    object-fit: cover; /* ให้รูปภาพขยายเต็มพื้นที่ที่กำหนดไว้โดยคงส่วนสูง */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+
+    /* เพิ่มเอฟเฟค transitions */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Style for the name and ID */
+  .personInfo {
+    font-size: 16px;
+    margin-top: 10px; /* ปรับระยะห่างของข้อความด้านบน */
+  }
+
+  /* เพิ่มเอฟเฟค hover */
+  .personContainer:hover .personImage {
+    transform: scale(1.1); /* ทำให้รูปภาพขยายเมื่อ hover */
+  }
+  .Home {
+    height: 100vh;
+  }

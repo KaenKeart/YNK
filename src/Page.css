@@ -1,0 +1,15 @@
+/* สีที่ใช้เป็นสีเทอร์เทียรีตามค่าหลังจากตั้งค่าของอุปกรณ์ (light/dark mode) */
+body {
+    background-color: white; /* สีพื้นหลังสำหรับ light mode */
+    color: black; /* สีข้อความสำหรับ light mode */
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333; /* สีพื้นหลังสำหรับ dark mode */
+      color: #fff; /* สีข้อความสำหรับ dark mode */
+    }
+  }
+  
+  /* อื่น ๆ ... */
+  
